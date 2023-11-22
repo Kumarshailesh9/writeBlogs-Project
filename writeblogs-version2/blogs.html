@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="#" method="post" onsubmit="addBlog(event)">
+            <label for="title">Blog Title</label>
+            <input type="text" id="blogTitle">
+            <label for="author">Blog Author</label>
+            <input type="text" id="blogAuthor">
+            <label for="content">Blog content</label>
+            <input type="text" id="blogContent">
+            <button type="submit">Post Blog</button>
+        </form>
+        <ul id="items"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page2</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Create A New Blog Post</h2>
+        <form action="#" method="post" onsubmit="addBlog(event)">
+            <div class="form-group">
+                <label for="blogTitle">Blog Title</label>
+                <input type="text" class="form-control" id="blogTitle">
+            </div>
+            <div class="form-group">
+                <label for="blogAuthor">Blog Author</label>
+                <input type="text" class="form-control" id="blogAuthor">
+            </div>
+            <div class="form-group">
+                <label for="blogContent">Blog Content</label>
+                <input type="text" class="form-control" id="blogContent">
+            </div>
+            <button type="submit" class="btn btn-primary">Post Blog</button>
+        </form>
+        <ul id="blogsList" class="list-group mt-4"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
